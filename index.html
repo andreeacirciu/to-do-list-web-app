@@ -5,7 +5,8 @@
     <title>To-Do List</title>
 
     <link type="text/css" rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 </head>
 <body>
@@ -15,8 +16,8 @@
 <h3>Create new task</h3>
 
 <form id="create-task-form">
-    <label for= "description-field" > Description:  </label>
-        <input type="text" id="description-field" placeholder = "Enter description...">
+    <label for="description-field"> Description: </label>
+    <input type="text" id="description-field" placeholder="Enter description...">
 
     <label for="deadline-field"> Deadline: </label>
     <input type="date" id="deadline-field">
@@ -25,20 +26,20 @@
 
 </form>
 <table id="tasks-table">
-<thead>
+    <thead>
     <tr>
         <th>Description</th>
         <th>Deadline</th>
         <th>Done</th>
         <th>Actions</th>
     </tr>
-</thead>
+    </thead>
     <tbody>
     <tr>
         <td> Learn HTML</td>
         <td>02.06.2020</td>
         <td>
-        <input type="checkbox" class ="mark-done" data-id=1>
+            <input type="checkbox" class="mark-done" data-id=1>
         </td>
         <td>
             <a href="#" class="remove-task" data-id=1> <i class="fa fa-trash"></i> </a>
@@ -49,7 +50,7 @@
         <td> Learn Javascript</td>
         <td>10.06.2020</td>
         <td>
-            <input type="checkbox" class ="mark-done" data-id=2>
+            <input type="checkbox" class="mark-done" data-id=2>
         </td>
         <td>
             <a href="#" class="remove-task" data-id=2> <i class="fa fa-trash"></i> </a>
@@ -60,7 +61,7 @@
         <td> Learn CSS</td>
         <td>13.06.2020</td>
         <td>
-            <input type="checkbox" class ="mark-done" data-id=3>
+            <input type="checkbox" class="mark-done" data-id=3>
         </td>
         <td>
             <a href="#" class="remove-task" data-id=3> <i class="fa fa-trash"></i> </a>
@@ -69,6 +70,11 @@
 
     </tbody>
 </table>
+
+
+<script src="js/lib/jquery-3.5.1.js"> </script>
+<script src="js/tasks.js"></script>
+
 
 </body>
 </html>
